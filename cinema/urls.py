@@ -3,8 +3,8 @@ from rest_framework.routers import DefaultRouter
 from .views import MovieViewSet
 
 router = DefaultRouter()
-router.register(r'movies', MovieViewSet)
+router.register(r"movies", MovieViewSet)
 
 urlpatterns = [
-    path('api/cinema/', include(router.urls)),
+    path("api/cinema/", include(router.urls)),
 ]
